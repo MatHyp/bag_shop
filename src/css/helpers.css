@@ -1,0 +1,20 @@
+.to-left {
+  transition: 1s;
+
+  transform: translate(-450px);
+  opacity: 0.5;
+}
+
+.to-right {
+  transition: 1s;
+
+  transform: translate(0px);
+  opacity: 1;
+}
+
+.hidden {
+  z-index: 1;
+
+  left: 2500px;
+  transition: 1s;
+}

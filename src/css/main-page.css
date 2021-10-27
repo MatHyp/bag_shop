@@ -1,0 +1,395 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+/* nav bar start */
+
+.nav-bar {
+  /* position: fixed; */
+  z-index: 1;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+  background-color: white;
+}
+
+.nav-bar .links {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10vw;
+  width: 500px;
+}
+
+.nav-bar li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+.nav-bar li {
+  list-style: none;
+}
+
+.nav-bar img {
+  /* width: 10vw; */
+  height: 6vh;
+  width: 4vw;
+}
+
+.nav-bar .fa-shopping-bag {
+  font-size: 40px;
+}
+
+.bookmark {
+  position: fixed;
+  width: 460px;
+  height: 100vh;
+  left: 100vw;
+  transform: translate(-100%);
+  background-color: white;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+  z-index: 10;
+}
+
+.bookmark h1 {
+  font-size: 20px;
+}
+
+.bookmark h2 {
+  font-size: 13px;
+}
+
+.cart-container .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 96%;
+  margin-top: 20px;
+  border-bottom: 2px solid black;
+}
+
+.cart-container .item img {
+  height: 120px;
+  padding-right: 30px;
+}
+
+.cart-container .item p {
+  /* padding-top: 80px; */
+  /* width: 100px; */
+  text-align: center;
+}
+.remove-class {
+  width: 110px;
+}
+
+.remove-class .x {
+  padding-left: 40px;
+  font-size: 30px;
+}
+
+.price-up p {
+  font-size: 22px;
+}
+
+.item-texts {
+  width: 100px;
+}
+
+.summary {
+  text-align: center;
+}
+.summary h1 {
+  text-align: right;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  padding-right: 60px;
+  font-size: 20px;
+}
+
+.summary button {
+  width: 80%;
+  height: 40px;
+  background-color: #f4811f;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  /* margin-top: 20px; */
+  margin-bottom: 10px;
+}
+
+.summary .continue-btn {
+  background-color: #fff;
+  border: 2px solid black;
+  color: black;
+}
+/*end nav bar start */
+
+.header {
+  background-image: url('../img/home-page/header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 90vh;
+}
+
+.header .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 14vw;
+  margin-top: 10vh;
+  width: 700px;
+}
+
+.header-arr:nth-of-type(1) {
+  transform: rotate(180deg);
+}
+
+.header-arr {
+  width: 70px;
+}
+
+.flex-container h1 {
+  font-size: 70px;
+  font-weight: 700;
+
+  color: #9f9f9f;
+  text-align: right;
+  font-family: 'Spartan', sans-serif;
+}
+
+.flex-container p {
+  font-size: 14px;
+  padding: 10px 0;
+  font-weight: 500;
+  color: #9f9f9f;
+}
+
+.flex-container button {
+  background-color: transparent;
+  border: 0;
+  font-size: 30px;
+}
+
+.flex-container .header-btn {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 3px white solid;
+  background-color: transparent;
+}
+
+@media (max-width: 1480px) {
+  .flex-container h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .flex-container h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .flex-container h2 {
+    font-size: 25px;
+  }
+
+  .flex-container p {
+    font-size: 18px;
+    /* width: 50px; */
+  }
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header .flex-container {
+    width: 80vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flex-container h1 {
+    font-size: 50px;
+  }
+
+  .header img {
+    width: 80vw;
+    height: 50vh;
+  }
+
+  .nav-bar .links a {
+    font-size: 0;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 420px) {
+  .flex-container h1 {
+    font-size: 40px;
+  }
+  .flex-container h2 {
+    font-size: 20px;
+  }
+
+  .flex-container p {
+    font-size: 13px;
+    font-weight: 500;
+    /* width: 50px; */
+  }
+  .header img {
+    width: 80vw;
+    /* height: 30vh; */
+  }
+}
+
+.section-one {
+  width: 86%;
+  /* height: 40vh; */
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.section-one img {
+  width: 20vw;
+}
+
+@media (max-width: 1400px) {
+  .section-one {
+    width: 90%;
+  }
+
+  .section-one img {
+    width: 25vw;
+    margin-top: 40px;
+  }
+}
+@media (orientation: portrait) and (max-width: 1024px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .section-one img {
+    width: 80vw;
+  }
+}
+
+.featured-section .title {
+  margin: 00px auto 50px auto;
+
+  text-align: center;
+  font-size: 38px;
+  color: #555555;
+  width: 600px;
+  padding-top: 50px;
+}
+
+/* featured section */
+
+.featured-section {
+  background-color: #f2f2f2;
+}
+
+.featured-section .row {
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* font-family: 'Spartan', sans-serif; */
+}
+
+.row .product {
+  margin-right: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.row .product h2 {
+  font-size: 18px;
+  padding: 14px 0;
+  font-family: 'Spartan', sans-serif;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+.row .product p {
+  font-family: 'Spartan', sans-serif;
+  color: #333333;
+  font-weight: 700;
+  background-color: #f2f2f2;
+}
+
+.row .product img {
+  width: 24vw;
+}
+
+@media (orientation: portrait) and (max-width: 1304px) {
+  .featured-section .row {
+    width: 100%;
+  }
+
+  .row .product {
+    margin-right: 0px;
+  }
+  .row .product img {
+    width: 80vw;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.big-picture {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/home-page/bigpicture1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+  background-attachment: fixed;
+}
+
+a {
+  background-color: #f2f2f2;
+}
